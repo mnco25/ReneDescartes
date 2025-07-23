@@ -31,6 +31,23 @@ body {
     text-align: center; /* Center text inside the card */
     backdrop-filter: blur(10px); /* Apply blur effect */
     color: #510c0c; /* Dark text color for good readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the entire card clickable */
+}
+
+.card-link:hover .card {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background: rgba(255, 255, 255, 0.85); /* Slightly more opaque on hover */
+}
+
+.card-link:active .card {
+    transform: translateY(-2px); /* Slight press effect */
 }
 
 button {

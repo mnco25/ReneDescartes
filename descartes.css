@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background for when the image ends */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background: url('./resources/home-page_wallpaper.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.navbar {
+    background-color: rgba(169, 169, 169, 0.8); /* Semi-transparent dark grey */
+    height: 50px;
+    width: 100%;
+    color: #333; /* Dark text color for readability */
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.777);
+    padding: 15px 20px;
+}
+
+.breadcrumb-link {
+    color: #510c0c;
+    text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-current {
+    color: #510c0c;
+    margin-left: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 25px;
+}
+
+section, article {
+    padding: 25px;
+}
+
+section {
+    width: 60%;
+}
+
+article {
+    width: 40%;
+}
+
+.text-container {
+    color: #510c0c;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.text-container:hover {
+    transform: scale(1.05); /* Slight scaling effect */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent on hover */
+}
+
+.quote {
+    margin-left: 40px; /* Indent the paragraph */
+    font-style: italic; /* Italicize the text */
+    border-left: 4px solid #934747; /* Add a left border */
+    padding-left: 15px; /* Add padding to the left */
+    color: #934747; /* Slightly darker text color */
+}
+
+p {
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #510c0c;
+    margin-bottom: 15px;
+}
+
+.about-share h2 {
+    font-size: 2em;
+    color: #510c0c;
+}
+
+.about-share {
+    font-size: 85%;
+    background: rgba(255, 255, 255, 0.777);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 13px 20px;
+    margin: 45px;
+    max-width: 300px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    color: #510c0c;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.about-share:hover {
+    transform: scale(1.20); /* Slight scaling effect */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent on hover */
+}
+
+.about-share p {
+    line-height: normal;
+    padding: 0;
+    margin-bottom: 15px;
+}
